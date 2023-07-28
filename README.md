@@ -5,14 +5,14 @@ Welcome! This is a project created using the processing power of a Jetson Nano. 
 
 
 # Steps 
-1. Go to your terminal and run  `git clone https://github.com/FTXpart2/CoffeeDetector-Nano.git`
+1. Go to your terminal and run  `git clone https://github.com/FTXpart2/PlasticOrMetal-Repo.git`
  
-2. Now go into the cloned directory, inside that directory clone jetsoninference
+2. Now go into the cloned directory, inside that directory `git clone https://github.com/dusty-nv/jetson-inference.git`
 
 3. After you do that, go to jetson-inference and run `./docker/run.sh`
 
-4. Inside docker you go to cd python/training/classification
-
+4. Inside docker you go to `cd python/training/classification
+`
 5. In the classification folder run `python3 train.py --model-dir=models/PlasticOrMetal data/PlasticOrMetal` (This will take a while)
 
 6. Once you finish the training, you need to export to onnx doing `python3 onnx_export.py --model-dir=models/PlasticOrMetal`
